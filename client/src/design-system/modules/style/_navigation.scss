@@ -46,7 +46,7 @@
     a { color: $gray--dark; }
     path { fill: $black-32; }
 
-    &.opened { height: 320px; }
+    &.opened { height: 272px; }
 
     @media (prefers-color-scheme: dark) {
         background-color: $gray--dark;

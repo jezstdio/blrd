@@ -58,7 +58,7 @@ export function Subnavigation(props) {
             </div>
             <section className="flex row margin-b-32">
                 <Twitter />
-                <Patreon />
+                {/* <Patreon /> */}
                 <KoFi />
             </section>
         </div>
@@ -70,7 +70,7 @@ export function NavigationElements(props) {
         <React.Fragment>
             <a className={`block no-decoration font_size-32 margin-b-8 ${props.color ? "color-white" : ''} ${props.activeLink === "home" ? "active" : ''}`} href="/">Home</a>
             <a className={`block no-decoration font_size-32 margin-b-8 ${props.color ? "color-white" : ''} ${props.activeLink === "about" ? "active" : ''}`} href="/about">About Us</a>
-            <a className={`block no-decoration font_size-32 margin-b-8 ${props.color ? "color-white" : ''} ${props.activeLink === "blog" ? "active" : ''}`} href="/blog">Blog</a>
+            {/* <a className={`block no-decoration font_size-32 margin-b-8 ${props.color ? "color-white" : ''} ${props.activeLink === "blog" ? "active" : ''}`} href="/blog">Blog</a> */}
         </React.Fragment>
     )
 }
