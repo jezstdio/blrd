@@ -134,7 +134,9 @@ app.ws("/:vote", async (ws, req) => {
             const team = message.vote.team;
             const vote = JSON.parse(await redis.get(id));
         
-            vote.teams[team].scores[vote.teams[team].scores.length - 1] += 1;
+            if (message.trusted) {
+                vote.teams[team].scores[vote.teams[team].scores.length - 1] += 1
+            }
         
             await redis.set(id, JSON.stringify(vote));
     

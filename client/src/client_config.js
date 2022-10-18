@@ -24,6 +24,7 @@ export function webSocket(props) {
             type: "ping"
         })), 1000);
         props.setIsLoading(false);
+        props.voting(false);
     }
 
     function ws_close(e) {
