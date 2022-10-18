@@ -1,6 +1,8 @@
 .DS_Store
 .vscode
 .vs_code
+*.env*
+*.pem
 
 *.css
 *.env
@@ -14,6 +16,9 @@ database/
 build/
 logs/
 node_modules/
+images/
+experiment/
 ssl/
 tmp/
+old/
 @eaDir/
