@@ -153,7 +153,7 @@ export default function Open(props) {
             calculateSize();
             createEffect(e, setPlusOneEffectList, PlusOneEffect);
             createEffect(e, setRippleEffectList, RippleEffect);
-            voting();
+            voting(true);
         }
     }
 
@@ -164,9 +164,10 @@ export default function Open(props) {
         handleBattleZone(e);
     }
 
-    function voting() {
+    function voting(trusted) {
         ws.current.send(JSON.stringify({
             type: "vote",
+            trusted,
             vote: {
                 id: props.vote,
                 team: handleTeams()[1]
@@ -179,7 +180,8 @@ export default function Open(props) {
             vote: props.vote,
             setVariable: props.setCurrentVote,
             ws,
-            setIsLoading
+            setIsLoading,
+            voting: (trusted) => voting(trusted)
         });
     }, []);
 
