@@ -1,0 +1,9 @@
+footer {
+    color: $black-32;
+    path { fill: $black-32; }
+
+    @media (prefers-color-scheme: dark) {
+        color: $white-32;
+        path { fill: $white-32; }
+    }
+}

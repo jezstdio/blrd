@@ -1,0 +1,79 @@
+//text
+.color-red--light { color: $red--light !important }
+.color-red--dark { color: $red--dark !important }
+.color-blue--light { color: $blue--light !important }
+.color-blue--dark { color: $blue--dark !important }
+.color-green--light { color: $green--light !important }
+.color-white { color: $white !important }
+.color-gray--light { color: $gray--light !important }
+.color-gray { color: $gray !important }
+.color-gray--dark { color: $gray--dark !important }
+.color-black { color: $black !important }
+.color-black-08 { color: $black-08 !important }
+.color-black-32 { color: $black-32 !important }
+.color-gray-0--dark { color: $gray-0--dark !important }
+.color-gray-32--dark { color: $gray-32--dark !important }
+.color-gray-48--dark { color: $gray-48--dark !important }
+.color-gray-72--dark { color: $gray-72--dark !important }
+.color-white-0 { color: $white-0 !important }
+.color-white-16 { color: $white-16 !important }
+.color-white-24 { color: $white-24 !important }
+.color-white-32 { color: $white-32 !important }
+.color-white-48 { color: $white-48 !important }
+.color-white-72 { color: $white-72 !important }
+
+.color-note { color: $black-32 !important }
+
+//fill
+.f_color-red--light { fill: $red--light !important }
+.f_color-red--dark { fill: $red--dark !important }
+.f_color-blue--dark { fill: $blue--dark !important }
+.f_color-blue--light { fill: $blue--light !important }
+.f_color-green--light { fill: $green--light !important }
+.f_color-white { fill: $white !important }
+.f_color-gray--light { fill: $gray--light !important }
+.f_color-gray { fill: $gray !important }
+.f_color-gray--dark { fill: $gray--dark !important }
+.f_color-black { fill: $black !important }
+.f_color-black-08 { fill: $black-08 !important }
+.f_color-black-32 { fill: $black-32 !important }
+.f_color-gray-0--dark { fill: $gray-0--dark !important }
+.f_color-gray-32--dark { fill: $gray-32--dark !important }
+.f_color-gray-48--dark { fill: $gray-48--dark !important }
+.f_color-gray-72--dark { fill: $gray-72--dark !important }
+.f_color-white-0 { fill: $white-0 !important }
+.f_color-white-16 { fill: $white-16 !important }
+.f_color-white-24 { fill: $white-24 !important }
+.f_color-white-32 { fill: $white-32 !important }
+.f_color-white-48 { fill: $white-48 !important }
+.f_color-white-72 { fill: $white-72 !important }
+
+//background
+.bg_color-red--light { background-color: $red--light !important }
+.bg_color-red--dark { background-color: $red--dark !important }
+.bg_color-blue--light { background-color: $blue--light !important }
+.bg_color-blue--dark { background-color: $blue--dark !important }
+.bg_color-green--light { background-color: $green--light !important }
+.bg_color-white { background-color: $white !important }
+.bg_color-gray--light { background-color: $gray--light !important }
+.bg_color-gray { background-color: $gray !important }
+.bg_color-gray--dark { background-color: $gray--dark !important }
+.bg_color-black { background-color: $black !important }
+.bg_color-black-08 { background-color: $black-08 !important }
+.bg_color-black-32 { background-color: $black-32 !important }
+.bg_color-gray-0--dark { background-color: $gray-0--dark !important }
+.bg_color-gray-32--dark { background-color: $gray-32--dark !important }
+.bg_color-gray-48--dark { background-color: $gray-48--dark !important }
+.bg_color-gray-72--dark { background-color: $gray-72--dark !important }
+.bg_color-white-0 { background-color: $white-0 !important }
+.bg_color-white-16 { background-color: $white-16 !important }
+.bg_color-white-24 { background-color: $white-24 !important }
+.bg_color-white-32 { background-color: $white-32 !important }
+.bg_color-white-48 { background-color: $white-48 !important }
+.bg_color-white-72 { background-color: $white-72 !important }
+
+.bg_color-red-blue-gradient { background: linear-gradient(160deg, $red--light 0%, $blue--light 100%) !important }
+
+@media (prefers-color-scheme: dark) {
+    .color-note { color: $white-32 !important }
+}

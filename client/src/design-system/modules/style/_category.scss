@@ -1,0 +1,13 @@
+.category {
+    box-shadow: 0 12px 24px -8px rgba($black, 0.48);
+    border-radius: 24px;
+    color: #ffffff;
+    display: block;
+    max-height: 32px;
+    padding: 4px 16px;
+    text-decoration: none;
+    user-select: none;
+
+    &:nth-child(odd) { background-color: $red--light; }
+    &:nth-child(even) { background-color: $blue--light; }
+}

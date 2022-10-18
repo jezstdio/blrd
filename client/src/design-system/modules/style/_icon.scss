@@ -1,0 +1,47 @@
+[class^="icon-"] {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    user-select: none;
+    width: 100%;
+}
+
+.icon-change { background-image: url(./../../../icons/change.svg) }
+.icon-share { background-image: url(./../../../icons/share.svg); transform: translateY(-2px) }
+.icon-close { background-image: url(./../../../icons/close.svg) }
+.icon-menu { background-image: url(./../../../icons/menu.svg) }
+
+.icon-arrow-left { background-image: url(./../../../icons/arrow.svg) }
+.icon-arrow-right { background-image: url(./../../../icons/arrow.svg); transform: scaleX(-1) }
+
+.icon-patreon {
+    background-image: url(./../../../icons/patreon.svg);
+    height: 48px;
+    margin: 0 auto;
+    width: 134px;
+}
+
+.size-32 {
+    height: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    width: 32px;
+}
+
+.size-40 {
+    height: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    width: 40px;
+}
+
+.size-48 {
+    height: 32px;
+    min-height: 48px;
+    min-width: 48px;
+    width: 48px;
+}

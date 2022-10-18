@@ -1,0 +1,33 @@
+button, .btn {
+    background: none;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px -4px rgba($black, 0.5);
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    max-height: 64px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    overflow: hidden;
+    
+    &.patreon {
+        background-color: $gray--dark;
+        box-shadow: 0 12px 24px -8px rgba($black, 0.48);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        @media (prefers-color-scheme: dark) { background-color: $gray }
+        + span { display: block; margin-top: 8px; text-align: center; }
+    }
+
+    &.share {
+        &.opened {
+            & :nth-child(1) { transform: translateY(-2px); }
+        }
+     }
+    
+    &.size-32 { padding: 8px }
+    &.size-48 { padding: 12px }
+}

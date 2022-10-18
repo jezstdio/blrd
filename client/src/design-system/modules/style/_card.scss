@@ -1,0 +1,94 @@
+.card-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar { display: none; height: 0; width: 0 }
+
+    &:after, &:before { content: ''; display: block; height: 160px }
+
+    &:after { min-width: 8px }
+    &:before { min-width: 24px }
+
+    @media screen and (min-width: $desktop-width) {
+        &:after { min-width: autoIndent(8px) }
+        &:before { min-width: autoIndent(24px) }
+    }
+}
+
+.card {
+    align-items: flex-start;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px -8px rgba($black, 0.48);
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    width: 100%;
+
+    &-popular {
+        --width: 148px;
+
+        height: 220px;
+        min-width: var(--width);
+        width: var(--width);
+
+        @media screen and (min-width: $desktop-width) {
+            --width: 188px;
+
+            height: 280px;
+            min-width: var(--width);
+            width: var(--width);
+        }
+    }
+
+    &-latest {
+        height: 220px;
+        width: calc(50% - 16px);
+
+        @media screen and (min-width: 492px) {
+            width: calc(33.333% - 16px);
+        }
+
+        @media screen and (min-width: 656px) {
+            height: 302px;
+            width: calc(25% - 16px);
+        }
+    }
+    
+    .vote-status {
+        max-height: calc(100% - 32px);
+        min-height: 32px;
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 100%;
+
+        &.placeholder {
+            max-height: 100%;
+            min-height: 0%;
+        }
+
+        .red-team, .blue-team {
+            display: flex;
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+
+            &:nth-child(1) {
+                top: -32px;
+            }
+
+            @include fontSize(24px);
+        }
+    }
+}
