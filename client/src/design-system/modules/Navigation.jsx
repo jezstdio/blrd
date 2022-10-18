@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Twitter } from "./Icon";
+import { Twitter, Patreon, KoFi } from "./Icon";
 
 export default function Navigation(props) {
     const [showSubNav, setShowSubNav] = useState(false);
@@ -58,6 +58,8 @@ export function Subnavigation(props) {
             </div>
             <section className="flex row margin-b-32">
                 <Twitter />
+                <Patreon />
+                <KoFi />
             </section>
         </div>
     )

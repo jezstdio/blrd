@@ -1,4 +1,4 @@
-import { Twitter } from "./Icon";
+import { Twitter, Patreon, KoFi } from "./Icon";
 
 export default function Footer(props) {
     return (
@@ -9,6 +9,8 @@ export default function Footer(props) {
                     <small className="block font_size-10">©2022 All Rights reserved</small>
                 </section>
                 <section className="flex row">
+                    <KoFi />
+                    <Patreon />
                     <Twitter />
                 </section>
             </section>

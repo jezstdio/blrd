@@ -1,6 +1,6 @@
 export function Patreon() {
     return (
-        <a className="flex center block size-40" href="https://patreon.com/blrd" target="_blank" rel="noreferrer">
+        <a className="flex center block size-40" href="https://patreon.com/jezstdio" target="_blank" rel="noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21"><path fillRule="evenodd" d="M3.868 0v21H0V0h3.868zm10.235 0C18.458 0 22 3.537 22 7.884c0 4.334-3.542 7.86-7.897 7.86-4.367 0-7.921-3.526-7.921-7.86C6.182 3.537 9.736 0 14.103 0z"/></svg>
         </a>
     )
@@ -10,6 +10,14 @@ export function Twitter() {
     return (
         <a className="flex center block size-40" href="https://twitter.com/BLRDio" target="_blank" rel="noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"><path fillRule="evenodd" d="M18.53 2.85A4.51 4.51 0 0020.42.33c-.83.52-1.75.9-2.74 1.1A4.2 4.2 0 0014.54 0a4.43 4.43 0 00-4.3 4.54c0 .36.03.7.1 1.04-3.58-.2-6.75-2-8.88-4.75A4.72 4.72 0 002.8 6.9a4.15 4.15 0 01-1.96-.57v.06c0 2.2 1.49 4.04 3.46 4.45a4.01 4.01 0 01-1.95.08 4.35 4.35 0 004.03 3.16A8.36 8.36 0 010 15.96 11.75 11.75 0 006.6 18c7.93 0 12.26-6.92 12.26-12.93l-.01-.59A9 9 0 0021 2.13c-.77.36-1.6.6-2.47.72z"/></svg>
+        </a>
+    )
+}
+
+export function KoFi() {
+    return (
+        <a className="flex center block size-40" href="https://ko-fi.com/jezstdio" target="_blank" rel="noreferrer">
+            <svg width="35" height="23" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M31.194 2.514c1.396.975 2.758 2.552 3.238 5.082 1.112 5.879-3.304 10.296-9.564 9.948.033 1.613-.29 4.506-3.403 5.285-.25.062-.506.09-.762.092-5.47.034-16.875.067-16.875.067s-3.494.001-3.73-3.485C.021 13.597.062 2.539.062 2.539L.06 2.262C.064 1.837.397.988 1.266.988h24.993c1.761 0 3.49.518 4.935 1.526ZM24.98 13.377s1.085.125 2.42-.042c1.543-.5 2.962-1.585 2.962-4.337 0-1.127-.4-1.942-.898-2.521-.708-.823-1.756-1.275-2.841-1.275H24.98v8.175Zm-12.232 4.992s-.173.17-.445.034c-.11-.081-.156-.13-.156-.13-.158-.157-.533-.503-1.023-.956-1.495-1.381-4.06-3.75-4.78-4.732-1.02-1.389-1.498-3.884-.13-5.338 1.367-1.453 4.322-1.562 6.275.586 0 0 2.252-2.564 4.99-1.386 2.737 1.178 2.633 4.33 1.04 6.2-1.793 2.092-5.77 5.722-5.77 5.722Z" /></svg>
         </a>
     )
 }
