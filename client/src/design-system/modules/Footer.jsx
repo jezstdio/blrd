@@ -10,7 +10,7 @@ export default function Footer(props) {
                 </section>
                 <section className="flex row">
                     <KoFi />
-                    <Patreon />
+                    {/* <Patreon /> */}
                     <Twitter />
                 </section>
             </section>
