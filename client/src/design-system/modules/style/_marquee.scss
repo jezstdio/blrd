@@ -1,0 +1,10 @@
+.marquee {
+    display: flex;
+    position: absolute;
+
+    span {
+        display: block;
+        position: absolute;
+        white-space: nowrap;
+    }
+}

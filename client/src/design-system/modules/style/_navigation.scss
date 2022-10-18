@@ -1,0 +1,72 @@
+.navigation {
+    align-items: center;
+    display: flex;
+    height: 72px;
+    justify-content: center;
+
+    .hamburger {
+        align-items: flex-start;
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 24px;
+        padding: 2px;
+        width: 24px;
+
+        &.clicked {
+            .cheese { transform: rotate(45deg); }
+            .meat { display: none; }
+            .salad { transform: translateY(-2px) rotate(-45deg); }
+        }
+
+        .layer {
+            display: block;
+            height: 2px;
+            transition: transform 250ms ease-in-out;
+
+            &.cheese { width: 20px }
+            &.meat { margin: 4px 0; width: 16px }
+            &.salad { width: 20px }
+        }
+    }
+}
+
+.subnavigation {
+    background-color: $white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+    height: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: height 250ms ease-in-out, visibility 250ms ease-in-out;
+    width: 100%;
+
+    a { color: $gray--dark; }
+    path { fill: $black-32; }
+
+    &.opened { height: 320px; }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $gray--dark;
+        color: $white-32;
+
+        a { color: $white; }
+        path { fill: $white-32; }
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 475px;
+    }
+}
+
+a {
+    &.active {
+        color: $gray-32--dark;
+
+        @media (prefers-color-scheme: dark) {
+            color: $white-32;
+        }
+    }
+}

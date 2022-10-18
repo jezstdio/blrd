@@ -1,0 +1,74 @@
+input[type="text"] {
+    border-bottom: 2px solid $white-32;
+    border-radius: 0;
+    color: $white;
+    display: block;
+    font-size: 32px;
+    padding-bottom: 8px;
+    transition: border 250ms ease-in-out;
+    line-height: 42px;
+    width: 100%;
+
+    &::placeholder { color: $white-32; }
+
+    &:focus {
+        border-bottom-color: $white;
+
+        + .team-indicator--red { box-shadow: 0px 8px 10px -2px $red--dark };
+        + .team-indicator--blue { box-shadow: 0px 8px 10px -2px $blue--dark };
+    }
+}
+
+[class*="team-indicator"] {
+    border-radius: 50%;
+    height: 24px;
+    transition: box-shadow 500ms ease-in-out;
+    width: 24px;
+}
+
+.team-indicator--red { background-color: $red--light; }
+.team-indicator--blue { background-color: $blue--light; }
+
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+
+    +label {
+        background-color: $gray--light;
+        border-radius: 16px;
+        color: $black;
+        display: inline-block;
+        transition:
+            background-color 250ms ease-in-out,
+            box-shadow 500ms ease-in-out,
+            color 250ms ease-in-out;
+        padding: 4px 16px;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+    &:checked {
+        +label {
+            background-color: $red--light;
+            box-shadow: 0px 12px 24px -8px $black-48;
+            color: $white;
+        }
+    }
+}
+
+.input--link {
+    background-color: $black-24;
+    border-radius: 28px;
+    border: none;
+    color: $white;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 12px 24px;
+    text-align: center;
+
+    &.copied {
+        background-color: $green--light;
+    }
+}

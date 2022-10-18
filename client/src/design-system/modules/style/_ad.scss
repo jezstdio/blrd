@@ -1,0 +1,39 @@
+.ad-adsense {
+    align-items: center;
+    background-color: rgba($black, 0.24);
+    border-radius: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    width: 320px;
+    
+    @media screen and (min-width: $desktop-width) {
+        width: 728px;
+        height: 90px;
+    }
+}
+
+.ad-patreon {
+    align-items: center;
+    background-color: rgba($white, 0.24);
+    color: rgba($gray--dark, 0.72);
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    width: 343px;
+
+    svg {
+        margin-right: 21px;
+        min-width: 134px;
+        path { fill: rgba($gray--dark, 0.72); }
+    }
+
+    p { @include fontSize(14px); }
+}

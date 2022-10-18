@@ -1,0 +1,48 @@
+.float {
+    &-none { float: none; }
+    &-l { float: left; }
+    &-r { float: right; }
+    &-x { float: both; }
+    
+    &-clear {
+        &:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-width - 1) {
+    .float {
+        &-none--m { float: none; }
+        &-l--m { float: left; }
+        &-r--m { float: right; }
+        &-x--m { float: both; }
+    
+        &-clear--m {
+            &:after {
+                clear: both;
+                content: "";
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .float {
+        &-none--d { float: none; }
+        &-l--d { float: left; }
+        &-r--d { float: right; }
+        &-x--d { float: both; }
+    
+        &-clear--d {
+            &:after {
+                clear: both;
+                content: "";
+                display: block;
+            }
+        }
+    }
+}

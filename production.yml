@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  blrd:
+    container_name: blrd
+    image: blrd:production
+    ports:
+      - 4321:4321
+    restart: on-failure
+    networks:
+      - database
+
+networks:
+  default:
+    name: blrd
+  database:
+    external: true

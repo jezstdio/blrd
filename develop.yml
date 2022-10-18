@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  blrd_client:
+    container_name: blrd_client
+    image: blrd_client:development
+    ports:
+      - 4321:4321
+    restart: on-failure
+    stdin_open: true
+    volumes:
+      - $PWD/client:/blrd
+
+  blrd_server:
+    container_name: blrd_server
+    image: blrd_server:development
+    networks:
+      - database
+    ports:
+      - 4320:4320
+    restart: on-failure
+    volumes:
+      - $PWD/server:/blrd
+
+networks:
+  default:
+    name: blrd
+  database:
+    external: true

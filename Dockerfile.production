@@ -1,0 +1,14 @@
+FROM node:latest
+WORKDIR /blrd
+
+COPY ./client/ .
+COPY ./server/ .
+COPY ./certificates/ ./certificates/
+COPY ./.env .
+
+RUN npm install
+
+ENV PORT=4321
+EXPOSE 4321
+
+CMD ["npm", "run", "production"]

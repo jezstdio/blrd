@@ -1,0 +1,9 @@
+FROM node:latest
+WORKDIR /blrd
+
+ENV PORT=4320
+ENV DEVELOPMENT=true
+
+EXPOSE 4320
+
+CMD ["npm", "run", "development"]

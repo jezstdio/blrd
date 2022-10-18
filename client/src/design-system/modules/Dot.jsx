@@ -1,0 +1,1 @@
+<div class="dot <%= `${bgColor}-bg` %> <%= locals.cssClass ? cssClass : '' %>"></div>

@@ -1,0 +1,58 @@
+$color: (
+    ("gray", 0, 0, 16),
+    ("gray", 0, 0, 32),
+    ("gray", 0, 0, 48),
+    ("gray", 0, 0, 64),
+    ("gray", 0, 0, 88),
+    ("gray", 0, 0, 96),
+
+    ("red", 345, 91, 16),
+    ("red", 345, 91, 32),
+    ("red", 345, 91, 48),
+    ("red", 345, 91, 64),
+    ("red", 345, 91, 88),
+    ("red", 345, 91, 96),
+
+    ("blue", 213, 100, 16),
+    ("blue", 213, 100, 32),
+    ("blue", 213, 100, 48),
+    ("blue", 213, 100, 64),
+    ("blue", 213, 100, 88),
+    ("blue", 213, 100, 96),
+
+    ("safe", 90, 71, 16),
+    ("safe", 90, 71, 32),
+    ("safe", 90, 71, 48),
+    ("safe", 90, 71, 64),
+    ("safe", 90, 71, 88),
+    ("safe", 90, 71, 96),
+
+    ("unsafe", 332, 76, 16),
+    ("unsafe", 332, 76, 32),
+    ("unsafe", 332, 76, 48),
+    ("unsafe", 332, 76, 64),
+    ("unsafe", 332, 76, 88),
+    ("unsafe", 332, 76, 96)
+);
+
+:root {
+    --color-0: #000;
+    --color-100: #fff;
+
+    @each $color, $h, $s, $l in $color { --color-#{$color}-#{$l}: hsl($h, $s, $l); }
+}
+
+.color-black-0 { color: #000; }
+.color-white-100 { color: #fff; }
+
+.f_color-black-0 { fill: #000; }
+.f_color-white-100 { fill: #fff; }
+
+.bg_color-black-0 { background-color: #000; }
+.bg_color-white-100 { background-color: #fff; }
+
+@each $color, $h, $s, $l in $color {
+    .color-#{$color}-#{$l} { color: hsl($h, $s, $l); }
+    .f_color-#{$color}-#{$l} { fill: hsl($h, $s, $l); }
+    .bg_color-#{$color}-#{$l} { background-color: hsl($h, $s, $l); }
+}

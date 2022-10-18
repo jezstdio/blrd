@@ -1,0 +1,1 @@
+<div class="backdrop fixed top-0 left-0 h-100 w-100 zindex-0 <%= locals.cssClass ? cssClass : '' %>"></div>

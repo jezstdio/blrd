@@ -1,0 +1,55 @@
+.toggle {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    .switches {
+        color: $gray;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 0 4px 0;
+        padding: 0;
+        position: relative;
+    
+        .switch {
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            width: 81px;
+    
+            &.active { color: $gray--dark }
+        }
+    
+        +.state, &:after {
+            border-radius: 2px;
+            display: block;
+            height: 4px;
+            position: absolute;
+        }
+    
+        +.state {
+            background-color: $gray--dark;
+            transition: transform 0.10s ease-in-out;
+            width: 50%;
+        }
+
+        &:after {
+            background-color: $gray-08--dark;
+            bottom: -8px;
+            content: "";
+            display: block;
+            width: 100%;
+        }
+    
+        @media (prefers-color-scheme: dark) {
+            color: $gray;
+            .switch.active { color: #ffffff }
+            +.state { background-color: #ffffff }
+            &:after { background-color: $white-08 }
+        }
+    }
+}
