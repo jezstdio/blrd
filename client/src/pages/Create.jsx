@@ -98,7 +98,7 @@ export default function Create() {
             <Head
                 title="Create Vote | BLRD! Your Online Real-time Social Voting Game."
                 description="Your Online Real-time Social Voting Game."
-                url={`https://blrd.jezstd.io/create`}
+                url={`https://blrd.jez.hu/create`}
                 />
             <div>
                 <Navigation />

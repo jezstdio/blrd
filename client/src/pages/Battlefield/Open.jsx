@@ -219,7 +219,7 @@ export default function Open(props) {
                 color={props.currentVote.teams[handleTeams()[0]].color}
                 title={`${props.currentVote.teams.red.name} vs ${props.currentVote.teams.blue.name}`}
                 description="Your Online Real-time Social Voting Game."
-                url={`https://blrd.jezstd.io/${props.vote}`} />
+                url={`https://blrd.jez.hu/${props.vote}`} />
             <div
                 className="fixed top-0 right-0 bottom-0 left-0 overflow-hidden"
                 style={{
@@ -342,7 +342,7 @@ function Share(props) {
                 <div
                     className={`input--link margin-b-8 ${copied ? 'copied' : ''}`}
                     onClick={e => copyShareLink(e)}
-                    >blrd.jezstd.io/{props.vote._id}</div>
+                    >blrd.jez.hu/{props.vote._id}</div>
                 { !copied && <span>Tap to Copy</span> }
                 { copied && <span className="color-green--light">Copied to your clipboard!</span> }
             </section>

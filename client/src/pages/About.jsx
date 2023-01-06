@@ -9,7 +9,7 @@ export default function About() {
             <Head
                 title="About us | BLRD! Your Online Real-time Social Voting Game."
                 description="Your Online Real-time Social Voting Game."
-                url={`https://blrd.jezstd.io/about`}
+                url={`https://blrd.jez.hu/about`}
             />
             <Navigation />
             <div class="max-width margin-x-auto margin-t-16">

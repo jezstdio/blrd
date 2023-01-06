@@ -26,7 +26,7 @@ export default function Ended(props) {
                 color={winnerTeam ? winnerTeam.color : "#000000"}
                 title={`${props.currentVote.teams.red.name} vs ${props.currentVote.teams.blue.name}`}
                 description="Your Online Real-time Social Voting Game."
-                url={`https://blrd.jezstd.io/${props.currentVote._id}`}
+                url={`https://blrd.jez.hu/${props.currentVote._id}`}
             />
             <div className="ended min_height-100vh"
                 style={{
