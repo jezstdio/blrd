@@ -23,7 +23,7 @@ app.enable('trust proxy');
 app.use(cors({
     origin: (origin, callback) => {
         const PORT = process.env.NODE_ENV === "development" ? process.env.CLIENT_PORT : process.env.SERVER_PORT
-        const whitelist = [`https://localhost:${PORT}`, `https://192.168.1.70:${PORT}`, `https://jezstdio.synology.me:${PORT}`, "https://blrd.jezstd.io"];
+        const whitelist = [`https://localhost:${PORT}`, `https://192.168.1.70:${PORT}`, `https://jezstdio.synology.me:${PORT}`, "https://blrd.jez.hu"];
 
         if (whitelist.indexOf(origin) !== -1 || !origin) {
             callback(null, true)

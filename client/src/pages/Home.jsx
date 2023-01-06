@@ -95,7 +95,7 @@ export default function Home() {
         <Head
           title="BLRD! Your Online Real-time Social Voting Game."
           description="Your Online Real-time Social Voting Game."
-          url={`https://blrd.jezstd.io`}
+          url={`https://blrd.jez.hu`}
         />
         <div className="App">
           <Navigation create />
